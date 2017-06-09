@@ -13,11 +13,11 @@ For TODO item, be sure to change it to say DONE when you have successfully compl
 // TODO: DONE
 function sum(a,b){ //eslint-disable-line
   var sum = a + b;
-  var string = 'The sum of ' + a + ' and ' + b + ' is ' + sum + '.';
+  var sumString = 'The sum of ' + a + ' and ' + b + ' is ' + sum + '.';
   return [sum,string];
 }
 
-// TODO: Here is the test for sum(); uncomment it to run it
+// TODO: DONE
 testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
