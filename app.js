@@ -55,11 +55,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // TODO: Done
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-  var newSum = a + b + c;
-  var newProduct = a * b * c;
-  var newSumString = a + ' and ' + b + ' and ' + c + ' sum to ' + newSum + '.';
-  var newProductString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + newProduct + '.';
-  return [newSum,newProduct,newSumString,newProductString];
+  var newSum1 = sum(a,b)[0];
+  var newSum2 = sum(newSum1,c)[0];
+  var newProduct1 = multiply(a,b)[0];
+  var newProduct2 = multiply(newProduct1,c)[0];
+  var newSumString = a + ' and ' + b + ' and ' + c + ' sum to ' + newSum2 + '.';
+  var newProductString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + newProduct2 + '.';
+  return [newSum2,newProduct2,newSumString,newProductString];
 }
 
 // TODO: Done
@@ -81,9 +83,10 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-  var arraySum = testArray[0] + testArray[1] + testArray[2];
-  var arraySumString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.';
-  return[arraySum,arraySumString];
+  var arraySum1 = sum(testArray[0],testArray[1])[0];
+  var arraySum2 = sum(arraySum1,testArray[2])[0];
+  var arraySumString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + arraySum2 + ' is their sum.';
+  return[arraySum2,arraySumString];
 }
 
 // TODO: DONE
